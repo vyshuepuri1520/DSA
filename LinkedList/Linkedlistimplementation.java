@@ -73,7 +73,7 @@ class linkedlist
         }
         else
         {
-            System.out.print("List : ");
+            System.out.print("Linked List : ");
             while(current.next != null)
             {
                 System.out.print(current.item+"->");
@@ -115,16 +115,22 @@ class linkedlist
     }
     public void deleteatEnd()
     {
-        Node current = this.head;
-        while(current.next != null)
+        if (head == null || head.next == null)
         {
-            current = current.next;
-            if(current.next.next == null)
-            {
-                current.next = null;
-            }
+            head = null;
         } 
-        this.size -= 1;      
+        else 
+        {
+            Node currentNode = head;
+            Node prevNode = null;
+            while (currentNode.next != null)
+            {
+                prevNode = currentNode;
+                currentNode = currentNode.next;
+            }
+            prevNode.next = null;
+        } 
+      
     }
     public void listLength()
     {
@@ -157,8 +163,9 @@ public class Linkedlistimplementation{
                     sll.traverse();
                     break;
                 case 5:
-                    System.out.print("Enter the data and the position:");
+                    System.out.print("Enter the data:");
                     String s2 = s.nextLine();
+                    System.out.print("Enter the position: ");
                     int j = Integer.parseInt(s.nextLine());
                     sll.addatMiddle(s2,j);
                     sll.traverse();
