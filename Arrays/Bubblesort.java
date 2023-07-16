@@ -1,7 +1,9 @@
 package Arrays;
 
-public class Bubblesort {
-    public static int[] print(int arr[]) {
+public class Bubblesort
+{
+    public static int[] print(int arr[])
+    {
 		int start=0;
 		int end = arr.length -1;
 		while(start<end)
@@ -18,15 +20,15 @@ public class Bubblesort {
 			end = end - 1;
 		}
 		return arr;
-}
+    }
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+    {
 		int arr[]= {6,9,5,1,3,8,7};
 		int result[] =print(arr);
 		for(int i=0;i<arr.length;i++)
 		{
 			System.out.print(result[i]+" ");
 		}
-
 	}
 }
