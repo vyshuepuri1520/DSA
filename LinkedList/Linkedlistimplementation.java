@@ -144,7 +144,7 @@ public class Linkedlistimplementation{
         Scanner s = new Scanner(System.in);
         while(true)
         {
-            System.out.print("Enter 1: Exit \nEnter 2: Traverse\nEnter 3: Size\nEnter 4: Add at Start\nEnter 5: Add at Middle\nEnter 6: Add at Endt\nEnter 7: Delete at Start\nEnter 8: Delete at Middle\nEnter 9: Delete at End\nEnter input : ");
+            System.out.print("Enter 1: Exit \nEnter 2: Traverse\nEnter 3: Size\nEnter 4: Add at Start\nEnter 5: Add at Middle\nEnter 6: Add at End\nEnter 7: Delete at Start\nEnter 8: Delete at Middle\nEnter 9: Delete at End\nEnter input : ");
             int userInput = Integer.parseInt(s.nextLine());
             switch (userInput) 
             {
