@@ -61,6 +61,6 @@ public class palindromell {
         System.out.println("Reversed Linked List:");
         printLinkedList(reversedHead);
         boolean checkpalindrome = palindrome(head,reversedHead);
-        System.out.println("The given linked list is palindrame: " + checkpalindrome);
+        System.out.println("The given linked list is palindrome: " + checkpalindrome);
     }
 }
