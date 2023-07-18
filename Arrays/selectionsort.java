@@ -1,4 +1,4 @@
-package Arrays;
+
 
 public class selectionsort {
     public static int[] print(int arr[])

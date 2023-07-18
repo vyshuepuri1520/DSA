@@ -1,4 +1,4 @@
-package Arrays;
+
 
 public class linearseach {
     public static void main(String[] args)
